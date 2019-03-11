@@ -16,8 +16,9 @@ function repeat(){
 	$('.rocket').css('margin-left','14%');
 	$('.rocket').animate({
 		left: "59%"
-	}, 1000, function(){
+	}, 20000, function(){
 		$('.rocket').repeat();
+	
 	}
 	);	
 }
