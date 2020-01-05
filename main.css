@@ -1,0 +1,149 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    font-family: monospace;
+}
+
+header {
+    display:none;
+}
+
+body{
+    background-color: #1F1E1E;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /*prevent scroll*/
+    
+}
+
+.fauxBody{
+    height: 96%; /*if i get rid of footer i can make it 100%*/
+    width: 99%;
+    position: relative;
+    border: 1px dashed red;
+    margin-left: 5px;
+}
+
+
+.navigation{
+    margin-top: 40px;
+    width: 53px;
+    background-color: ;
+    height: 200px;
+}
+
+.button{
+    border-radius: 500px;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 11px;
+    height: 40px;
+    margin-left: 5px;
+    padding: 11px 0px 0px 0px;
+    text-align: center;
+    opacity: .4;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.button:hover{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+#bottle{
+    background: ;
+    color: white;
+    font-family: monospace;
+    height: 603px;
+    margin-left: 80%;
+    margin-top: -200px;
+    overflow: visible;
+    position: absolute;
+    width: 235px;
+
+}
+
+
+.map{
+    display: none;
+    color: white;
+    font-family: monospace;
+    margin-left: 10%;
+    margin-top: -200px;
+    position: absolute;
+}
+
+#planet1{
+    color: white;
+    width: 420px;
+    margin-left: 3%;
+    margin-top: -30%;
+    position: absolute;
+}
+
+.planet:hover{
+    color: #efe77a;
+    filter: hue-rotate(340deg);
+    -webkit-filter: hue-rotate(340deg);
+}
+
+.rocket{
+    margin-left: 10px;
+    width: 120px;   
+    position: absolute;
+    z-index: -1;
+}
+
+#rocketArt{
+    color: white;
+    transform: rotate(90deg); 
+    /*rotating makes this look weird but will do for now*/
+    width: 90px;
+    font-size: 9px;
+}
+
+#trail{
+    color: white;
+    margin-left: -430px;
+    margin-top: -107px;
+    width: 420px;
+    overflow: visible;
+}
+
+#tempSquare{
+    background-color: #1F1E1E;
+    margin-top: -25px;
+    margin-left: -140px;
+    height: 140px;
+    width: 140px;
+    z-index: 2;
+    position: absolute;
+
+}
+
+
+footer{
+    color: white;
+    clear: both;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 0px;
+    font-family:monospace
+}

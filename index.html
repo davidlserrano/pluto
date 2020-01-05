@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+
+    <meta charset="UTF-8">
+    <title>Pluto</title>
+    <link rel="stylesheet" href="main.css">
+	</head>
+
+<!-- playing with seperate pages for now, eventually will fit everything in one page
+	 especially because we want to keep our stardust timer running when user is in a
+	 "different" page (tab) -->
+	
+<body>
+    
+    <div class = "fauxBody">
+        
+        <div class = "navigation">
+
+           <div class = "button" id = "home">
+                <pre>home</pre></div>
+            
+              <div class = "button" id = "mapButton"><pre>map</pre></div>
+            
+            <div class = "button" id = "tempButton"><pre>temp</pre></div>
+        </div>
+        
+		
+		
+  <!-- letting bottle float freely for now -->
+        <pre id = "bottle">
+            ______
+           ( _ _ _)
+            |_ _ |
+           (_ _ _ )
+            |    |
+            |____|
+            |/  \|
+            (1337)
+            |\__/|
+            |    |
+            |    |
+           / .--. \
+        .-' :(..): `-.
+    _.-'    `-..-'    `-._
+  .'                      `.
+  |___                  ___|
+  |   `````--....--'''''   |
+  |  |`````--....--'''''|  |
+  |  |      ##### .     |  |
+  |  |                  |  |
+  |  |      .           |  |
+  |  |    :  bottle     |  |     
+  |  |    !    of    .  |  |        
+  |  |    | stardust.   |  |         
+  |  |    |_         ⊹  |  |
+  |  | ,  | `.          |  |
+  |  |-+-&gt;#&lt;-+- ---  -- |  |
+  |  | `._|_,'          |  |
+  |  |    T    amt:     |  |
+  |  |    |  <span id = "strdust">0</span> strdst	|  |
+  |  |    !             |  |
+  |  |    :             |  |
+  |  |     .          * |  |
+  |  |                  |  |
+  |  |                  |  |
+  |  \__________________/  |
+  | °·    ⊹.     +    . ·. |
+  |   . ✷  　. ·.  ✧　.  * |
+  |  +  　✧.  *　　　　 *   |                
+  `–––––––––––––––––––––––'
+
+                 1 strdst/s    
+                 <span id = "">0</span>
+<!--/*bottle for now change to a jar for later
+remember strdst amount will be changing */-->
+
+        </pre>
+
+            <div class = "map">
+                <pre>
+⊹-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=--=--=--=-=-=-=-=-=-⊹
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+!                                                                                                                     !
+:                                                                                                                     :
+:                                                                                                                     :
+.                                                                                                                     .
+.                                                                                                                     .
+
+
+*                                                                                                                     *
+
+.                                                                                                                     .
+.                                                                                                                     .
+:                                                                                                                     :
+:                                                                                                                     :
+!                                                                                                                     !
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+|                                                                                                                     |
+⊹-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-⊹</pre>
+    
+            <div class = "planet"> <!-- planet class bc eventually want more planets in map that change color when hovered -->
+        <pre id = "planet1">
+ °   　　 * 　 ·
+
+    *　 　 　  　*　 　 　  　
+ 　 　 ˚  　 +  　 ˚  　 +   　 
+　　    　 ⊹  · 　　✵   　 ⊹  · 
+  　  · 　     　  　 
+  *  .     .-.,="``"=.   .      *  .   
+           '=/_       \ 　　　  　 ·
+　       ✧　 |  '=._   |　   ·   ✧　  ⊹
+*　 　 　     \     `=,/`.    
+ 　 　 ˚       '=.__.=' `=' 　 +   　 　.  ·.  ✧　
+　　✵   　 ⊹  ·        　    .  ✧
+  　  · 　  ˚  　　✵   　 ⊹             ·   　　 * 　 ·
+    .   ✷  　.    .   °　　          
+　      　.  *　　　   　✷　 * 　 ·    °
+　.              .  ✧　  　 　 ⊹
+        </pre>
+            </div>
+    
+      
+  <div class = "rocket">
+      <pre id = "rocketArt">
+       /\
+     .'  '.    
+    /======\      
+   ;:.  _   ;
+   |:. (_)  |
+   |:.  _   |
+   |:. (_)  |          
+   ;:.      ;
+ .' \:.    / `.
+/ .-'':._.'`-. \
+|/    /||\    \|
+      </pre>  
+    <pre id = "trail">
+    　 +   　 　.  ·.  ✧　
+　　✵   　 ⊹  ·        　    .  ✧
+  　  · 　  ˚  　　✵   　 ⊹             ·   　　 * 　 ·
+    
+    </pre>
+    
+    </div>
+
+      <div id = "tempSquare"></div>
+      </div>
+    
+ </div>
+
+    
+    <footer> Copyright © 2019 David Serrano. All rights reserved.</footer>
+
+	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "javaTest.js"></script>
+        <script>
+          $(document).ready(function() {
+
+          });
+        </script>
+    
+    
+</body>
+	
+
+
+</html>
+
